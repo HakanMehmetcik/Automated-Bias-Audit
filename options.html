@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IR Scholar Settings</title>
+  <style>
+    body { font-family: 'Georgia', serif; padding: 40px; background-color: #f0f2f5; }
+    .card { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 550px; margin: auto; }
+    h2 { color: #003366; border-bottom: 2px solid #003366; padding-bottom: 10px; margin-top: 0; }
+    .input-group { margin-bottom: 20px; }
+    label { display: block; font-weight: bold; margin-bottom: 8px; font-size: 14px; color: #003366; }
+    input { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+    button { background: #003366; color: white; border: none; padding: 15px; cursor: pointer; width: 100%; border-radius: 4px; font-weight: bold; }
+    #status-msg { margin-top: 15px; text-align: center; color: #28a745; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>API Configuration</h2>
+    <div class="input-group">
+      <label for="geminiKey">Gemini 2.5 Flash API Key (Google AI Studio)</label>
+      <input type="password" id="geminiKey">
+    </div>
+    <div class="input-group">
+      <label for="deepseekKey">DeepSeek API Key (Platform)</label>
+      <input type="password" id="deepseekKey">
+    </div>
+    <button id="saveBtn">SAVE CONFIGURATION</button>
+    <div id="status-msg"></div>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>
